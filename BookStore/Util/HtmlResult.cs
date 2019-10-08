@@ -1,5 +1,5 @@
-using System.Web.Mvc;
- 
+п»їusing System.Web.Mvc;
+
 namespace BookStore.Util
 {
     public class HtmlResult : ActionResult
@@ -12,7 +12,7 @@ namespace BookStore.Util
         public override void ExecuteResult(ControllerContext context)
         {
             string fullHtmlCode = "<!DOCTYPE html><html><head>";
-            fullHtmlCode += "<title>Главная страница</title>";
+            fullHtmlCode += "<title>Р“Р»Р°РІРЅР°СЏ СЃС‚СЂР°РЅРёС†Р°</title>";
             fullHtmlCode += "<meta charset=utf-8 />";
             fullHtmlCode += "</head> <body>";
             fullHtmlCode += htmlCode;
