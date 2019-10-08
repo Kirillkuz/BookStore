@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using BookStore.Models;
+using BookStore.Util
 using System.Web.Routing;
 
 namespace BookStore.Controllers
@@ -49,6 +50,9 @@ namespace BookStore.Controllers
                 response.Write("<h2>Ваш IP-адрес: " + ip + "</h2>");
             }
         }
-
+        public ActionResult GetHtml()
+        {
+            return new HtmlResult("<h2>Привет мир!</h2>");
+        }
     }
 }
